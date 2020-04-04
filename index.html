@@ -6,6 +6,8 @@
 
   <script src="https://kit.fontawesome.com/4067fec9b0.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <script src="main.js" defer></script>
   <link rel="stylesheet" href="style.css">
 
   <title>woorimIT youtube</title>
@@ -28,71 +30,85 @@
     <iframe styrle="background-color: #123123"src="https://www.youtube.com/embed/Zc9RUu26B5w" allowfullscreen></iframe>
   </section>
 
-  <!-- video infomaion -->
-  <section class="info">
-    <div class="metadata">
-      <ul class="hashtags">
-        <li><a href="#">#우리밋</a></li>
-        <li><a href="#">#우리밋최고</a></li>
-        <li><a href="#">#멋쟁이우리밋</a></li>
-      </ul>
-      <div class="titleAndButton">
-        <span class="title">
-          브이로그 | 남대생 개발자 | 안녕 나를 소개하지 | 공부 자극 | 코딩테스트 일주일 남음 | 알고리즘 | 인공지능 | 수학 | 엄마표 김밥 | 한창 코로나 |
-        </span>
-        <button class="moreBtn">
-          <i class="fas fa-caret-down"></i>
-        </button>
-      </div>
-      <div class="views">
-        <span class="views">1M views 1 month ago</span>
-      </div>
-    </div>
-
-    <ul class="actions">
-      <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
-      <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-      <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-      <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-      <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
-    </ul>
-
-    <div class="channel">
+  <section class="infoAndUpNext">
+    <!-- video infomaion -->
+    <section class="info">
       <div class="metadata">
-        <img src="image/profile.JPG" width="300" height="400" />
-        <span class="name">우리밋 woorimIT</span>
-        <span class="subscribers">1M subscribers</span>
+        <ul class="hashtags">
+          <li><a href="#">#우리밋</a></li>
+          <li><a href="#">#우리밋최고</a></li>
+          <li><a href="#">#멋쟁이우리밋</a></li>
+        </ul>
+        <div class="titleAndButton">
+          <span class="title clamp">
+            브이로그 | 남대생 개발자 | 안녕 나를 소개하지 | 공부 자극 | 코딩테스트 일주일 남음 | 알고리즘 | 인공지능 | 수학 | 엄마표 김밥 | 한창 코로나 |
+          </span>
+          <button class="moreBtn">
+            <i class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <span class="views">1M views 1 month ago</span>
       </div>
-      <button class="subscribe">subscribe</button>
-    </div>
-  </section>
 
-  <!-- UpNext -->
-  <section class="upNext">
-    <span class="title">UpNext</span>
-    <ul>
-      <li>
-        <img src="image/rest.jpg" />
-        <span class="title">대학생 개발자 | 브이로그 | 대전에 찜질방 다녀왔습니다 | 힐링 | 나홀로찜방</span>
-        <span class="channel">우리밋 woorimIT</span>
-        <span class="views">1M views 1 month ago</span>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-      </li>
-      <li>
-        <img src="image/notebook.jpg" />
-        <span class="title">노트북 추천 | 컴공과 학생 회장이 수년간 다져온 노트북 고르는 법 | 전공 별 성능, 스펙 보는 방법 | 당신도 컴퓨터 박사인 "척" 할 수 있음</span>
-        <span class="channel">우리밋 woorimIT</span>
-        <span class="views">1M views 1 month ago</span>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-      </li>
-      <li>
-        <img src="image/LH.jpg" />
-        <span class="title">LH청년전세임대주택 | 집구하기 프로젝트 | 실전으로 알려드림 | 신청하기 | 처음부터 함께해보아요🥰</span>
-        <span class="channel">우리밋 woorimIT</span>
-        <span class="views">1M views 1 month ago</span>
-        <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-      </li>
-    </ul>
+      <ul class="actions">
+        <li><button><i class="fas fa-thumbs-up active"></i><span>1K</span></button></li>
+        <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+        <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+        <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+        <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+      </ul>
+
+      <div class="channel">
+        <div class="metadata">
+          <img src="image/profile.JPG" />
+          <div class="info">
+            <span class="name">우리밋 woorimIT</span>
+            <span class="subscribers">1M subscribers</span>
+          </div>
+        </div>
+        <button class="subscribe">subscribe</button>
+      </div>
+    </section>
+
+    <!-- UpNext -->
+    <section class="upNext">
+      <span class="title">다음 동영상</span>
+      <ul>
+        <li class="item">
+          <div class="img">
+            <img src="image/rest.jpg" />
+          </div>
+          <div class="info">
+            <span class="title">대학생 개발자 | 브이로그 | 대전에 찜질방 다녀왔습니다 | 힐링 | 나홀로찜방</span>
+            <span class="channel">우리밋 woorimIT</span>
+            <span class="views">1M views 1 month ago</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img">
+            <img src="image/notebook.jpg" />
+          </div>
+          <div class="info">
+            <span class="title">노트북 추천 | 컴공과 학생 회장이 수년간 다져온 노트북 고르는 법 | 전공 별 성능, 스펙 보는 방법 | 당신도 컴퓨터 박사인 "척" 할 수 있음</span>
+            <span class="channel">우리밋 woorimIT</span>
+            <span class="views">1M views 1 month ago</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <div class="img">
+            <img src="image/LH.jpg" />
+          </div>
+          <div class="info">
+            <span class="title">LH청년전세임대주택 | 집구하기 프로젝트 | 실전으로 알려드림 | 신청하기 | 처음부터 함께해보아요🥰</span>
+            <span class="channel">우리밋 woorimIT</span>
+            <span class="views">1M views 1 month ago</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
   </section>
 </body>
 </html>
